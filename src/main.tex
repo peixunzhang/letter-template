@@ -5,11 +5,10 @@
 
 \documentclass[sender,
                paper=a4,
-               sigleft=false,
                version=last,
-               fontsize=11pt,
+               fontsize=12pt,
                DIV=13,
-               BCOR=0mm]{scrlttr2}
+               parskip=full]{scrlttr2}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
@@ -20,37 +19,33 @@
 \renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
 
-% Seitenlayout anpassen:
-\usepackage{changepage}
-%\changepage{text height}{text width}{even-side margin}
-%{odd-side margin}{column sep.}
-%{topmargin}{headheight}{headsep}{footskip}
-\changepage{+3cm}{}{}{}{}{}{}{}{-5cm}
+\setkomavar*{enclseparator}{Incl.}
+\setkomavar{subject}{Application --  Working Student Scala Development (m/f/d) in the Simulation Team}
 
 \begin{document}
-% Anlagentext (Doppelpunkt wird automatisch gesetzt)
-\setkomavar*{enclseparator}{Incl.}
-% Betreff, Datum, Ort:
-\setkomavar{subject}{Application -- Software Engineer - Data Infrastructure}
-\setkomavar{date}{\today}
-\setkomavar{place}{Osnabrück}
 
 % German address
 \begin{letter}{
-  Twitter\\
-  1355 Market Street\\
-  Suite 900 San Francisco\\
-  CA 94103\\
-  United States
+  MOIA GmbH\\
+  Alexanderufer 5\\
+  10117 Berlin
 }
 \opening{To Whom It May Concern,}
-\selectlanguage{english}
-% In diesem Beispiel soll der Briefkoerper auf Englisch sein. Wenn wir LaTeX die
-% aktuelle Textsprache per `\selectlanguage{}` wissen lassen, verhaelt es sich
-% entsprechend (angepasste Silbentrennung und mehr).
-My name is Maxim Schuwalow and I am currently working as a Data Engineer at a consulting startup in Germany. I have been building analytics and machine learning pipelines in Scala and Python for the past two years and am now looking for new opportunities. I believe that the combination of data science/machine learning and solid engineering principles is paramount to getting the most value from data.\\\\
-I want to join Twitters data infrastructure team because I believe that it is a great place to improve my skills in this area and a good opportunity to produce value with the skills I already have.\\\\
-You can check my CV for a high-level overview of what I have been working on or check out my Github at \href{https://github.com/mschuwalow}{https://github.com/mschuwalow} for my personal projects.
+\frenchspacing
+
+My name is Peixun Zhang, I'm currently a master's student in Computer Science with Data Analytics.
+About one year ago, I started to teach myself programming.
+I began by learning Python and have done several courses in addition to my
+university curriculum since then. I discovered that I enjoy functional programming
+and continued my studies by taking scala courses.
+
+So far, I know core language features and data structures.
+I'm confident that I will pick up any libraries that are useful for my day-to-day work quickly.
+
+I'm applying for this role because I'm very eager to gain more practical experience and am looking
+forward to seeing how Scala is used in big projects. MOIA has a great team of experienced developers
+and I believe that this would be the perfect environment to transform my
+knowledge into skills that are valuable in the future.
 
 \closing{I'm looking forward to hearing from you,}
 \encl{CV}

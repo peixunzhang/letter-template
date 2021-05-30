@@ -4,7 +4,7 @@
 % November 2009, Aktualisierung Januar 2013
 %%
 
-\ProvidesFile{absender.lco}[letter-class-option file]
+\ProvidesFile{sender.lco}[letter-class-option file]
 
 % Symbole: Handy, Telefon, E-Mail
 \RequirePackage{marvosym}
@@ -44,13 +44,13 @@
 
 
 % Absenderdaten:
-\setkomavar{fromname}{Maxim Schuwalow}
-\setkomavar{fromphone}[\Mobilefone~]{+49\,1520\,3154702}
-\setkomavar{fromemail}[\Letter~]{Maxim.Schuwalow@gmail.com}
-\setkomavar{fromurl}[]{http://stfu.se}
-\setkomavar{backaddress}{Maxim Schuwalow, Caprivistraße 32a, 49076 Osnabrück}
-\setkomavar{fromaddress}{Maxim Schuwalow\\Caprivistraße 32a\\49076 Osnabrück}
-\setkomavar{fromfax}[\Faxmachine~]{+49\,22\,112233}
+\setkomavar{fromname}{Peixun Zhang}
+\setkomavar{date}{\today}
+\setkomavar{place}{Berlin}
+\setkomavar{fromphone}[\Mobilefone~]{+49\,1516\,5740759}
+\setkomavar{fromemail}[\Letter~]{max317backup@gmail.com}
+\setkomavar{backaddress}{Peixun Zhang, Trusetaler Straße 92, 12687 \usekomavar{place}}
+\setkomavar{fromaddress}{Peixun Zhang\\Trusetaler Straße 92\\12687 \usekomavar{place}}
 
 
 % Optisches:
